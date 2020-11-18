@@ -5,9 +5,7 @@ import { useSelector } from "react-redux";
 
 export default function AppSideBar({ children }: any) {
   const sidebarState = useSelector((state: any) => state.Sidebar);
-
   const { animation, visible } = sidebarState;
-
   return (
     <div>
       <Sidebar.Pushable as={Segment}>
