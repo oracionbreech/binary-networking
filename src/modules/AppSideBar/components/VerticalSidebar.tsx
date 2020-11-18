@@ -4,7 +4,6 @@ import { Link, useHistory } from "react-router-dom";
 
 function VerticalSidebar({ animation, direction, visible }: any) {
   const history = useHistory();
-  console.log(history);
 
   return (
     <Sidebar

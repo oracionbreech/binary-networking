@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import { Helmet } from "react-helmet";
 import Main from "./modules/Main";
 import "semantic-ui-css/semantic.min.css";
 import reducer from "./reducers/index";
@@ -14,9 +13,6 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Helmet>
-          <title>Dashboard</title>
-        </Helmet>
         <Router>
           <Main />
         </Router>
