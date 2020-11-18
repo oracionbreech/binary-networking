@@ -1,14 +1,20 @@
+import Dashboard from "../../Dashboard/Dashboard";
 import Home from "../../Home/Home";
 
 export const appRoutes = [
   {
-    path: "/",
-    name: "Networks",
+    path: "/home",
+    name: "home",
     component: Home,
   },
   {
     path: "/dashboard",
-    name: "Networks",
-    component: null,
+    name: "Dashboard",
+    component: Dashboard,
+  },
+  {
+    path: "/statistics",
+    name: "Statistics",
+    component: Home,
   },
 ];

@@ -18,18 +18,28 @@ function VerticalSidebar({ animation, direction, visible }: any) {
       visible={visible}
       width="thin"
     >
-      <Menu.Item as="a" onClick={() => history.push("/dashboard")}>
-        Dashboard
+      <Menu.Item as="a">
+        <Link to="/dashboard">Dashboard</Link>
       </Menu.Item>
       <Menu.Item as="a">
         <Link to="/statistics">Statistics</Link>
       </Menu.Item>
-      <Menu.Item as="a">Transactions</Menu.Item>
-      <Menu.Item as="a">Network</Menu.Item>
+      <Menu.Item as="a">
+        <Link to="/transactions">Transactions</Link>
+      </Menu.Item>
+      <Menu.Item as="a">
+        <Link to="/networks">Networks</Link>
+      </Menu.Item>
       <Divider hidden />
-      <Menu.Item as="a">Tickets</Menu.Item>
-      <Menu.Item as="a">Profile</Menu.Item>
-      <Menu.Item as="a">Settings</Menu.Item>
+      <Menu.Item as="a">
+        <Link to="/tickets">Tickets</Link>
+      </Menu.Item>
+      <Menu.Item as="a">
+        <Link to="/profile">Profile</Link>
+      </Menu.Item>
+      <Menu.Item as="a">
+        <Link to="/settings">Settings</Link>
+      </Menu.Item>
     </Sidebar>
   );
 }
