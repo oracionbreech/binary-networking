@@ -5,12 +5,13 @@ const VerticalSidebar = ({ animation, direction, visible }: any) => (
   <Sidebar
     as={Menu}
     animation={animation}
+    className="app-vertical-sidebar"
     direction={direction}
     icon="labeled"
     inverted
     vertical
     visible={visible}
-    width="thin"
+    width="wide"
   >
     <Menu.Item as="a">Dashboard</Menu.Item>
     <Menu.Item as="a">Statistics</Menu.Item>
