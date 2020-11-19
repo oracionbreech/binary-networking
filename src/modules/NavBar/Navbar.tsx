@@ -14,7 +14,7 @@ export default function Navbar() {
           <Button
             onClick={() => dispatch(changeAnimation(SLIDE_ALONG_ANIMATION))}
           >
-            Slide Along
+            Open Menu
           </Button>
         </Grid.Column>
         <Grid.Column className="icon-container">
